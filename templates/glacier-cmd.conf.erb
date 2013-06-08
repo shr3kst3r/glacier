@@ -1,0 +1,18 @@
+[aws]
+access_key=<%= @aws_access_key %>
+secret_key=<%= @aws_secret_key %>
+
+<% if @sdb_access_key != 'SDBKEY' || @sdb_secret_key != 'SDBSECRET' %>
+[sdb]
+access_key=<%= @sdb_access_key %>
+secret_key=<%= @sdb_secret_key %>
+region=<%= @aws_region %>
+<% end %>
+
+[glacier]
+region=<%= @aws_region %>
+bookkeeping=<%= @bookkeeping %>
+bookkeeping-domain-name=<%= @bookkeeping_domain %>
+logfile=<%= @logfile %>
+loglevel=<%= @logleve %>
+output=<%= @output %>
