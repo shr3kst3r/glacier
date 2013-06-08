@@ -5,27 +5,60 @@
 #
 # === Parameters
 #
-# Document parameters here.
+# [*glacier_config*]
+#   The location of the glacier config file.  This should be the full path
+#   including the filename.  Example: /home/joe/.glacier-cmd
 #
-# [*sample_parameter*]
-#   Explanation of what this parameter affects and what it defaults to.
-#   e.g. "Specify one or more upstream ntp servers as an array."
+# [*glacier_config_owner*]
+#   The user who will own the config file.  The user must already exist.
 #
-# === Variables
+# [*glacier_config_group*]
+#   The group who will own the config file.  The group must already exist.
 #
-# Here you should define a list of variables that this module would require.
+# [*aws_access_key*]
+#   The AWS access key.
 #
-# [*sample_variable*]
-#   Explanation of how this variable affects the funtion of this class and if it
-#   has a default. e.g. "The parameter enc_ntp_servers must be set by the
-#   External Node Classifier as a comma separated list of hostnames." (Note,
-#   global variables should not be used in preference to class parameters  as of
-#   Puppet 2.6.)
+# [*aws_secret_key*]
+#   The AWS secret.
+#
+# [*aws_region*]
+#   The AWS region you want to put your data in.
+#
+# [*sdb_access_key*]
+#   The AWS SDB access key.
+#
+# [*sdb_secret_key*]
+#   The AWS SDB secret.
+#
+# [*bookkeeping*]
+#
+#
+# [*bookkeeping_domain*]
+#
+#
+# [*logfile*]
+#
+#
+# [*loglevel*]
+#
+#
+# [*output*]
 #
 # === Examples
 #
 #  class { glacier:
-#    servers => [ 'pool.ntp.org', 'ntp.local.company.com' ]
+#    aws_access_key => '11223344',
+#    aws_secret_key => '55667788'
+#  }
+#
+#  or
+#
+#  class { glacier:
+#    aws_access_key       => '11223344',
+#    aws_secret_key       => '55667788',
+#    glacier_config       => '/home/joe/.glacier-cmd',
+#    glacier_config_owner => 'joe',
+#    glacier_config_group => 'joe'
 #  }
 #
 # === Authors
