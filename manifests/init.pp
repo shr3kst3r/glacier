@@ -25,24 +25,27 @@
 #   The AWS region you want to put your data in.
 #
 # [*sdb_access_key*]
-#   The AWS SDB access key.
+#   The AWS SDB access key.  You should leave this blank if you do not
+#   want to use SDB.
 #
 # [*sdb_secret_key*]
-#   The AWS SDB secret.
+#   The AWS SDB secret.  You should leave this blank if you do not
+#   want to use SDB.
 #
 # [*bookkeeping*]
-#
+#   Uses SDB to keep track of your uploads.  It is not required.
 #
 # [*bookkeeping_domain*]
-#
+#   Bookkeeping domain name.
 #
 # [*logfile*]
-#
+#   The location of the log file.  For example: /home/joe/.glacier-cmd.log
 #
 # [*loglevel*]
-#
+#   Log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
 #
 # [*output*]
+#   Output format: print, csv, json
 #
 # === Examples
 #
