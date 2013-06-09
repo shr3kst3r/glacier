@@ -1,7 +1,5 @@
 rvm:
   - 1.8.7
-  - 1.9.3
-  - ruby-head
 env:
   - PUPPET_VERSION=2.6.18
   - PUPPET_VERSION=2.7.21
