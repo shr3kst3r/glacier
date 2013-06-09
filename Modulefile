@@ -1,11 +1,9 @@
 name    'shr3kst3r-glacier'
 version '0.0.1'
-source 'UNKNOWN'
-author 'shr3kst3r'
-license 'Apache License, Version 2.0'
-summary 'UNKNOWN'
-description 'UNKNOWN'
-project_page 'UNKNOWN'
-
-## Add dependencies, if any:
-# dependency 'username/name', '>= 1.2.0'
+source 'git://github.com/shr3kst3r/glacier.git'
+author 'Dennis Rowe'
+license 'MIT'
+summary 'Install the glacier-cmd for accessing Amazon Glacier from the command line'
+description 'Installs the glacier-cmd for accessing Amazon Glacier fromt the command line.  It checks out the git repo from https://github.com/uskudnik/amazon-glacier-cmd-interface.git and runs the installer.  It then sets up the glacier-cmd configuration file.'
+project_page 'https://github.com/shr3kst3r/glacier'
+dependency 'puppetlabs/vcsrepo', '>= 0.1.1'
