@@ -1,5 +1,7 @@
 # Puppet module for glacier-cmd
 
+[![Build Status](https://travis-ci.org/shr3kst3r/glacier.png?branch=master)](https://travis-ci.org/shr3kst3r/glacier)
+
 This puppet module installs the glacier-cmd from the [amazon-glacier-cmd-interface project](https://github.com/uskudnik/amazon-glacier-cmd-interface).  The glacier-cmd allows you to interact with Amazon's [Glacier](http://aws.amazon.com/glacier/) service.
 
 ## Supports
