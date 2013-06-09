@@ -3,10 +3,10 @@ rvm:
   - 1.9.3
   - ruby-head
 env:
-  - PUPPET_VERSION="~> 2.6.0"
-  - PUPPET_VERSION="~> 2.7.0"
-  - PUPPET_VERSION="~> 3.0.0"
-  - PUPPET_VERSION="~> 3.1.0"
-  - PUPPET_VERSION="~> 3.2.0"
+  - PUPPET_VERSION=2.6.18
+  - PUPPET_VERSION=2.7.21
+  - PUPPET_VERSION=3.0.2
+  - PUPPET_VERSION=3.1.1
+  - PUPPET_VERSION=3.2.1
 notifications:
   email: shr3kst3r@gmail.com
