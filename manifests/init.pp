@@ -41,7 +41,7 @@
 # [*logfile*]
 #   The location of the log file.  For example: /home/joe/.glacier-cmd.log
 #
-# [*loglevel*]
+# [*logginglevel*]
 #   Log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
 #
 # [*output*]
@@ -84,7 +84,7 @@ class glacier(
     $bookkeeping          = 'False',
     $bookkeeping_domain   = 'example.com',
     $logfile              = '/var/log/glacier-cmd.log',
-    $loglevel             = 'INFO',
+    $logginglevel         = 'INFO',
     $output               = 'print'
   ) {
   package { 'python-setuptools':
